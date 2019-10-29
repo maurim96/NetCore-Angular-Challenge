@@ -1,0 +1,8 @@
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Domain\bin\Debug\netcoreapp2.2\Domain.deps.json
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Domain\bin\Debug\netcoreapp2.2\Domain.dll
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Domain\bin\Debug\netcoreapp2.2\Domain.pdb
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Domain\obj\Debug\netcoreapp2.2\Domain.csproj.CoreCompileInputs.cache
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfoInputs.cache
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfo.cs
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Domain\obj\Debug\netcoreapp2.2\Domain.dll
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Domain\obj\Debug\netcoreapp2.2\Domain.pdb

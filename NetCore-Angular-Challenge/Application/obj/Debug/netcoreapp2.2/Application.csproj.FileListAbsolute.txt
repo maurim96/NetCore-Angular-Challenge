@@ -1,0 +1,12 @@
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Application\bin\Debug\netcoreapp2.2\Application.deps.json
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Application\bin\Debug\netcoreapp2.2\Application.dll
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Application\bin\Debug\netcoreapp2.2\Application.pdb
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Application\bin\Debug\netcoreapp2.2\Domain.dll
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Application\bin\Debug\netcoreapp2.2\Domain.pdb
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Application\obj\Debug\netcoreapp2.2\Application.csprojAssemblyReference.cache
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Application\obj\Debug\netcoreapp2.2\Application.csproj.CoreCompileInputs.cache
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfoInputs.cache
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfo.cs
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Application\obj\Debug\netcoreapp2.2\Application.csproj.CopyComplete
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Application\obj\Debug\netcoreapp2.2\Application.dll
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Application\obj\Debug\netcoreapp2.2\Application.pdb

@@ -1,0 +1,193 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Persistance\\Persistance.csproj": {}
+  },
+  "projects": {
+    "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
+        "outputPath": "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
+        "outputPath": "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Persistance\\Persistance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Persistance\\Persistance.csproj",
+        "projectName": "Persistance",
+        "projectPath": "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Persistance\\Persistance.csproj",
+        "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
+        "outputPath": "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Persistance\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Application\\Application.csproj": {
+                "projectPath": "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Application\\Application.csproj"
+              },
+              "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Program Files\\Repositorios\\NetCore-Angular-Challenge\\NetCore-Angular-Challenge\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

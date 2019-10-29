@@ -1,0 +1,9 @@
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\ErrorHandler\bin\Debug\netcoreapp2.2\ErrorHandler.deps.json
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\ErrorHandler\bin\Debug\netcoreapp2.2\ErrorHandler.dll
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\ErrorHandler\bin\Debug\netcoreapp2.2\ErrorHandler.pdb
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\ErrorHandler\obj\Debug\netcoreapp2.2\ErrorHandler.csprojAssemblyReference.cache
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\ErrorHandler\obj\Debug\netcoreapp2.2\ErrorHandler.csproj.CoreCompileInputs.cache
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\ErrorHandler\obj\Debug\netcoreapp2.2\ErrorHandler.AssemblyInfoInputs.cache
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\ErrorHandler\obj\Debug\netcoreapp2.2\ErrorHandler.AssemblyInfo.cs
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\ErrorHandler\obj\Debug\netcoreapp2.2\ErrorHandler.dll
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\ErrorHandler\obj\Debug\netcoreapp2.2\ErrorHandler.pdb
