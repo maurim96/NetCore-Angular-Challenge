@@ -1,2 +1,15 @@
-# NetCore-AngularTest
-Interview test wich main purpose is to build an API from scratch with Net Core following principles and patterns and integrate it with an SPA (Angular framework).
+# Net Core & Angular Challenge
+
+### Backend: ASP .NET Core 2.2
+
+#### Design and Architecture:
+##### ✓ Clean Architecture
+##### ✓ Domain Driven Design
+##### ✓ Repository Pattern
+##### ✓ Unit Of Work Pattern
+
+#### External Libraries:
+##### > AutoMapper 
+##### > Swagger
+
+### Frontend: Angular 8
