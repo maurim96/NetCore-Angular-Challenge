@@ -1,4 +1,4 @@
-# Net Core & Angular Challenge
+# Interview Challenge
 
 ### Backend: ASP .NET Core 2.2
 
