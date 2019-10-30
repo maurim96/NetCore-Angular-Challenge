@@ -12,3 +12,5 @@ D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challeng
 D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Persistance\bin\Debug\netcoreapp2.2\Application.pdb
 D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Persistance\bin\Debug\netcoreapp2.2\Domain.pdb
 D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Persistance\obj\Debug\netcoreapp2.2\Persistance.csproj.CopyComplete
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Persistance\bin\Debug\netcoreapp2.2\Persistance.runtimeconfig.json
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Persistance\bin\Debug\netcoreapp2.2\Persistance.runtimeconfig.dev.json

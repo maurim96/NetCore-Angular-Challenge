@@ -6,3 +6,4 @@ D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challeng
 D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfo.cs
 D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Domain\obj\Debug\netcoreapp2.2\Domain.dll
 D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Domain\obj\Debug\netcoreapp2.2\Domain.pdb
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\Domain\obj\Debug\netcoreapp2.2\Domain.csprojAssemblyReference.cache

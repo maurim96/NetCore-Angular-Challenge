@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>NetCore.Angular.Challenge</name>
+  </assembly>
+  <members>
+    <member name="F:Web.Configurations.SwaggerConfiguration.EndpointDescription">
+      <summary>
+        <para>Description</para>
+      </summary>
+    </member>
+    <member name="F:Web.Configurations.SwaggerConfiguration.EndpointUrl">
+      <summary>
+        <para>Swagger json info</para>
+      </summary>
+    </member>
+    <member name="F:Web.Configurations.SwaggerConfiguration.ContactName">
+      <summary>
+        <para>Contact: Mauricio Miño</para>
+      </summary>
+    </member>
+    <member name="F:Web.Configurations.SwaggerConfiguration.ContactUrl">
+      <summary>
+        <para>Contact url</para>
+      </summary>
+    </member>
+    <member name="F:Web.Configurations.SwaggerConfiguration.DocNameV1">
+      <summary>
+        <para>Name version</para>
+      </summary>
+    </member>
+    <member name="F:Web.Configurations.SwaggerConfiguration.DocInfoTitle">
+      <summary>
+        <para>Title</para>
+      </summary>
+    </member>
+    <member name="F:Web.Configurations.SwaggerConfiguration.DocInfoVersion">
+      <summary>
+        <para>Info version</para>
+      </summary>
+    </member>
+    <member name="F:Web.Configurations.SwaggerConfiguration.DocInfoDescription">
+      <summary>
+        <para>Challenge Description</para>
+      </summary>
+    </member>
+  </members>
+</doc>

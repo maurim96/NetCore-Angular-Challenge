@@ -23,10 +23,10 @@ namespace Persistance.SQL.EFCore.Entities
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //if (!optionsBuilder.IsConfigured)
-            //{
-            //    optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=ChallengeDB;Trusted_Connection=True;");
-            //}
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Server=MSI\\SQLEXPRESS01;Database=ChallengeDB;Trusted_Connection=True");
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
