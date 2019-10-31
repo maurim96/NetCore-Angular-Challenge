@@ -16,3 +16,5 @@ D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challeng
 D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\IoC\bin\Debug\netcoreapp2.2\Application.pdb
 D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\IoC\bin\Debug\netcoreapp2.2\Persistance.pdb
 D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\IoC\bin\Debug\netcoreapp2.2\Domain.pdb
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\IoC\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Http.dll
+D:\Program Files\Repositorios\NetCore-Angular-Challenge\NetCore-Angular-Challenge\IoC\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Http.xml

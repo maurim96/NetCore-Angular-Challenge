@@ -29,6 +29,7 @@ namespace Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSession();
+            services.AddHttpClient();
             ConfigureContexts(services);
             RegisterServices(services);
             AddSwaggerService(services);
@@ -37,7 +38,9 @@ namespace Web
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddCors();
             services.AddScoped<WebApiExceptionFilterAttribute>();
+#pragma warning disable CS0618 // El tipo o el miembro están obsoletos
             services.AddAutoMapper();
+#pragma warning restore CS0618 // El tipo o el miembro están obsoletos
 
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>

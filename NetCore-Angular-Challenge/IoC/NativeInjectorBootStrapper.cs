@@ -1,14 +1,11 @@
 ﻿using Application.Repositories;
 using Application.UoW;
 using Application.UseCases.ImportCompetitionUseCase;
+using Application.UseCases.PersistCompetitionUseCase;
 using ErrorHandler.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
-using Persistance.SQL.EFCore.Entities;
 using Persistance.SQL.EFCore.Repositories;
 using Persistance.SQL.EFCore.UoW;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace IoC
 {
@@ -16,13 +13,14 @@ namespace IoC
     {
         public static void RegisterServices(IServiceCollection services)
         {
-            //Use Cases
-            //services.AddScoped<IGetAllWeatherForecastUseCase, GetAllWeatherForecastUseCase>();
+
             services.AddSingleton<IUnitOfWork, UnitOfWork>();
+
+            //Use Cases
             services.AddScoped<IImportCompetitionUseCase, ImportCompetitionUseCase>();
+            services.AddScoped<IPersistCompetitionUseCase, PersistCompetitionUseCase>();
 
             //Repositories
-            //services.AddTransient<IGenericRepository<TEntity>, GenericRepository<TEntity>>();
             services.AddTransient<ICompetitionRepository, CompetitionRepository>();
 
             //CrossCuttings

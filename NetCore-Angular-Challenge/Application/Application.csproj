@@ -5,7 +5,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Http">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.http\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
