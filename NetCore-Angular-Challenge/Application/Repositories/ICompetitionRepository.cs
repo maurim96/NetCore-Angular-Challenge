@@ -8,11 +8,9 @@ namespace Application.Repositories
     public interface ICompetitionRepository
     {
         Competition GetByID(int id);
-
         void Insert(Competition competition);
-
+        void Insert(ApiResponseCompetition competition);
         void Delete(int id);
-
         void Update(Competition competition);
     }
 }

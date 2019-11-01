@@ -1,9 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Persistance.Migrations
 {
-    public partial class FirstMigration : Migration
+    public partial class DatabaseCreation : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,8 +10,7 @@ namespace Persistance.Migrations
                 name: "Competitions",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Id = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Code = table.Column<string>(nullable: true),
                     AreaName = table.Column<string>(nullable: true)
@@ -26,8 +24,7 @@ namespace Persistance.Migrations
                 name: "Teams",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Id = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Tla = table.Column<string>(nullable: true),
                     ShortName = table.Column<string>(nullable: true),
@@ -40,7 +37,7 @@ namespace Persistance.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "CompetitionTeam",
+                name: "CompetitionsTeams",
                 columns: table => new
                 {
                     CompetitionId = table.Column<int>(nullable: false),
@@ -48,15 +45,15 @@ namespace Persistance.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CompetitionTeam", x => new { x.CompetitionId, x.TeamId });
+                    table.PrimaryKey("PK_CompetitionsTeams", x => new { x.CompetitionId, x.TeamId });
                     table.ForeignKey(
-                        name: "FK_CompetitionTeam_Competitions_CompetitionId",
+                        name: "FK_CompetitionsTeams_Competitions_CompetitionId",
                         column: x => x.CompetitionId,
                         principalTable: "Competitions",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_CompetitionTeam_Teams_TeamId",
+                        name: "FK_CompetitionsTeams_Teams_TeamId",
                         column: x => x.TeamId,
                         principalTable: "Teams",
                         principalColumn: "Id",
@@ -67,8 +64,7 @@ namespace Persistance.Migrations
                 name: "Players",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Id = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Position = table.Column<string>(nullable: true),
                     DateOfBirth = table.Column<string>(nullable: true),
@@ -88,8 +84,8 @@ namespace Persistance.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_CompetitionTeam_TeamId",
-                table: "CompetitionTeam",
+                name: "IX_CompetitionsTeams_TeamId",
+                table: "CompetitionsTeams",
                 column: "TeamId");
 
             migrationBuilder.CreateIndex(
@@ -101,7 +97,7 @@ namespace Persistance.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "CompetitionTeam");
+                name: "CompetitionsTeams");
 
             migrationBuilder.DropTable(
                 name: "Players");

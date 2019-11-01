@@ -13,6 +13,9 @@ namespace Persistance.SQL.EFCore.UoW
     {
         private ChallengeDbContext _context = new ChallengeDbContext();
         private ICompetitionRepository _competitionRepository;
+        private ITeamRepository _teamRepository;
+        private IPlayerRepository _playerRepository;
+        private ICompetitionTeamRepository _competitionTeamRepository;
         private IMapper _mapper;
 
         public UnitOfWork(IMapper mapper)
@@ -20,10 +23,6 @@ namespace Persistance.SQL.EFCore.UoW
             _mapper = mapper;
         }
 
-        //private IGenericRepository<Competitions> _competitionsRepository;
-        //private IGenericRepository<Teams> _teamsRepository;
-        //private IGenericRepository<Players> _playersRepository;
-        //private IGenericRepository<CompetitionTeam> _compTeamRepository;
         private bool disposed = false;
 
         public ICompetitionRepository CompetitionRepository
@@ -38,57 +37,41 @@ namespace Persistance.SQL.EFCore.UoW
             }
         }
 
-        //public IGenericRepository<Competitions> CompetitionsRepository
-        //{
-        //    get
-        //    {
+        public ITeamRepository TeamRepository
+        {
+            get
+            {
+                if (_teamRepository == null)
+                {
+                    _teamRepository = new TeamRepository(_context, _mapper);
+                }
+                return _teamRepository;
+            }
+        }
 
-        //        if (_competitionsRepository == null)
-        //        {
-        //            _competitionsRepository = _competitionsRepository ?? new GenericRepository<Competitions>(_context);
-        //        }
-        //        return _competitionsRepository;
-        //    }
-        //}
+        public IPlayerRepository PlayerRepository
+        {
+            get
+            {
+                if (_playerRepository== null)
+                {
+                    _playerRepository = new PlayerRepository(_context, _mapper);
+                }
+                return _playerRepository;
+            }
+        }
 
-        //public IGenericRepository<Teams> TeamsRepository
-        //{
-        //    get
-        //    {
-
-        //        if (_teamsRepository == null)
-        //        {
-        //            _teamsRepository = _teamsRepository ?? new GenericRepository<Teams>(_context);
-        //        }
-        //        return _teamsRepository;
-        //    }
-        //}
-
-        //public IGenericRepository<Players> PlayersRepository
-        //{
-        //    get
-        //    {
-
-        //        if (_playersRepository == null)
-        //        {
-        //            _playersRepository = _playersRepository ?? new GenericRepository<Players>(_context);
-        //        }
-        //        return _playersRepository;
-        //    }
-        //}
-
-        //public IGenericRepository<CompetitionTeam> CompTeamRepository
-        //{
-        //    get
-        //    {
-
-        //        if (_compTeamRepository == null)
-        //        {
-        //            _compTeamRepository = _compTeamRepository ?? new GenericRepository<CompetitionTeam>(_context);
-        //        }
-        //        return _compTeamRepository;
-        //    }
-        //}
+        public ICompetitionTeamRepository CompetitionTeamRepository
+        {
+            get
+            {
+                if (_competitionTeamRepository == null)
+                {
+                    _competitionTeamRepository = new CompetitionTeamRepository(_context, _mapper);
+                }
+                return _competitionTeamRepository;
+            }
+        }
 
         public void Commit()
         {

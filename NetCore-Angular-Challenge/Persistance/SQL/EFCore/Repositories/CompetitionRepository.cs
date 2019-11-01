@@ -9,47 +9,51 @@ namespace Persistance.SQL.EFCore.Repositories
 {
     public class CompetitionRepository : ICompetitionRepository
     {
-        internal ChallengeDbContext context;
-        internal DbSet<Competitions> dbSet;
+        internal ChallengeDbContext _context;
         private IMapper _mapper;
 
         public CompetitionRepository(ChallengeDbContext context, IMapper mapper)
         {
-            this.context = context;
-            this.dbSet = context.Set<Competitions>();
+            _context = context;
             _mapper = mapper;
         }
         public virtual Competition GetByID(int id)
         {
-            return _mapper.Map<Competitions, Competition>(dbSet.Find(id));
+            return _mapper.Map<Competitions, Competition>(_context.Competitions.Find(id));
         }
 
         public virtual void Insert(Competition competition)
         {
             Competitions competitionDB = _mapper.Map<Competition, Competitions>(competition);
-            dbSet.Add(competitionDB);
+            _context.Competitions.Add(competitionDB);
+        }
+
+        public virtual void Insert(ApiResponseCompetition competition)
+        {
+            Competitions competitionDB = _mapper.Map<ApiResponseCompetition, Competitions>(competition);
+            _context.Competitions.Add(competitionDB);
         }
 
         public virtual void Delete(int id)
         {
-            Competitions competitionToDelete = dbSet.Find(id);
+            Competitions competitionToDelete = _context.Competitions.Find(id);
             Delete(competitionToDelete);
         }
 
         private void Delete(Competitions competitionToDelete)
         {
-            if (context.Entry(competitionToDelete).State == EntityState.Detached)
+            if (_context.Entry(competitionToDelete).State == EntityState.Detached)
             {
-                dbSet.Attach(competitionToDelete);
+                _context.Competitions.Attach(competitionToDelete);
             }
-            dbSet.Remove(competitionToDelete);
+            _context.Competitions.Remove(competitionToDelete);
         }
 
         public virtual void Update(Competition competition)
         {
             Competitions competitionToUpdate = _mapper.Map<Competition, Competitions>(competition);
-            dbSet.Attach(competitionToUpdate);
-            context.Entry(competitionToUpdate).State = EntityState.Modified;
+            _context.Competitions.Attach(competitionToUpdate);
+            _context.Entry(competitionToUpdate).State = EntityState.Modified;
         }
     }
 }

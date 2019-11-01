@@ -12,9 +12,13 @@ namespace Persistance.SQL.EFCore.AutoMapper
         public DomainToEntityMapper()
         {
             CreateMap<Competition, Competitions>();
+            CreateMap<ApiResponseCompetition, Competitions>()
+                .ForMember(x => x.AreaName, opt => opt.MapFrom(z => z.area.name));
             CreateMap<Team, Teams>();
+            CreateMap<TeamAux, Teams>()
+                .ForMember(x => x.AreaName, opt => opt.MapFrom(z => z.area.name));
             CreateMap<Player, Players>();
-            CreateMap<Domain.CompetitionTeam, Entities.CompetitionTeam>();
+            CreateMap<CompetitionTeam, CompetitionsTeams>();
         }
     }
 }

@@ -26,9 +26,19 @@ namespace Web.Controllers
 
         [HttpPost]
         [Route("{idCompetition}")]
-        public async Task ImportCompetitionData(int idCompetition)
+        public async Task<IActionResult> ImportCompetitionData(int idCompetition)
         {
-            ApiCompleteResponse result = await _importCompetitionUseCase.Execute(idCompetition);
+            ApiCompleteResponse response = await _importCompetitionUseCase.Execute(idCompetition);
+
+            if(response.Status.StatusCode == 201)
+            {
+                _persistCompetitionUseCase.Execute(response.Data);
+            }
+
+            return new ObjectResult(response.Status.Message)
+            {
+                StatusCode = response.Status.StatusCode
+            };
         }
     }
 }

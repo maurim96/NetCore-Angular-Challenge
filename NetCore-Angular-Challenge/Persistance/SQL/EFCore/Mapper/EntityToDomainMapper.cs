@@ -14,7 +14,7 @@ namespace Persistance.SQL.EFCore.AutoMapper
             CreateMap<Competitions, Competition>();
             CreateMap<Teams, Team>();
             CreateMap<Players, Player>();
-            CreateMap<Entities.CompetitionTeam, Domain.CompetitionTeam>();
+            CreateMap<CompetitionsTeams, CompetitionTeam>();
         }
     }
 }

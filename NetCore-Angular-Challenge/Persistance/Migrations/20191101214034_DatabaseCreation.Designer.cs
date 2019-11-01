@@ -9,8 +9,8 @@ using Persistance.SQL.EFCore.Entities;
 namespace Persistance.Migrations
 {
     [DbContext(typeof(ChallengeDbContext))]
-    [Migration("20191030205825_FirstMigration")]
-    partial class FirstMigration
+    [Migration("20191101214034_DatabaseCreation")]
+    partial class DatabaseCreation
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,24 +20,9 @@ namespace Persistance.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Persistance.SQL.EFCore.Entities.CompetitionTeam", b =>
-                {
-                    b.Property<int>("CompetitionId");
-
-                    b.Property<int>("TeamId");
-
-                    b.HasKey("CompetitionId", "TeamId");
-
-                    b.HasIndex("TeamId");
-
-                    b.ToTable("CompetitionTeam");
-                });
-
             modelBuilder.Entity("Persistance.SQL.EFCore.Entities.Competitions", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<int>("Id");
 
                     b.Property<string>("AreaName");
 
@@ -50,11 +35,22 @@ namespace Persistance.Migrations
                     b.ToTable("Competitions");
                 });
 
+            modelBuilder.Entity("Persistance.SQL.EFCore.Entities.CompetitionsTeams", b =>
+                {
+                    b.Property<int>("CompetitionId");
+
+                    b.Property<int>("TeamId");
+
+                    b.HasKey("CompetitionId", "TeamId");
+
+                    b.HasIndex("TeamId");
+
+                    b.ToTable("CompetitionsTeams");
+                });
+
             modelBuilder.Entity("Persistance.SQL.EFCore.Entities.Players", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<int>("Id");
 
                     b.Property<string>("CountryOfBirth");
 
@@ -77,9 +73,7 @@ namespace Persistance.Migrations
 
             modelBuilder.Entity("Persistance.SQL.EFCore.Entities.Teams", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<int>("Id");
 
                     b.Property<string>("AreaName");
 
@@ -96,7 +90,7 @@ namespace Persistance.Migrations
                     b.ToTable("Teams");
                 });
 
-            modelBuilder.Entity("Persistance.SQL.EFCore.Entities.CompetitionTeam", b =>
+            modelBuilder.Entity("Persistance.SQL.EFCore.Entities.CompetitionsTeams", b =>
                 {
                     b.HasOne("Persistance.SQL.EFCore.Entities.Competitions", "Competition")
                         .WithMany("TeamsLink")

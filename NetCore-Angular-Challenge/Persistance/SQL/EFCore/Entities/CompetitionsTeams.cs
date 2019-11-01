@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Persistance.SQL.EFCore.Entities
 {
-    public partial class CompetitionTeam
+    public partial class CompetitionsTeams
     {
         public int CompetitionId { get; set; }
         public int TeamId { get; set; }

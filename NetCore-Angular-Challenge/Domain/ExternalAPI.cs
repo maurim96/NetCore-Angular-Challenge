@@ -15,7 +15,17 @@ namespace Domain
             value = "86aebf1fe1ad42d8b41ad1af52dc8f53";
         }
     }
+    public class Status
+    {
+        public int StatusCode { get; set; }
+        public string Message { get; set; }
+    }
     public class ApiCompleteResponse
+    {
+        public Status Status { get; set; }
+        public CompetitionData Data { get; set; }
+    }
+    public class CompetitionData
     {
         public ApiResponseCompetition Competition { get; set; }
         public List<TeamAux> Teams { get; set; }
@@ -48,4 +58,5 @@ namespace Domain
         public int id { get; set; }
         public string name { get; set; }
     }
+
 }
