@@ -4,6 +4,9 @@ using Domain;
 using Microsoft.EntityFrameworkCore;
 using Persistance.SQL.EFCore.Entities;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Persistance.SQL.EFCore.Repositories
 {
@@ -16,6 +19,10 @@ namespace Persistance.SQL.EFCore.Repositories
         {
             _context = context;
             _mapper = mapper;
+        }
+        public virtual List<Competition> GetCompetitions()
+        {
+            return _mapper.Map<List<Competitions>, List<Competition>>(_context.Competitions.ToList());
         }
         public virtual Competition GetByID(int id)
         {
