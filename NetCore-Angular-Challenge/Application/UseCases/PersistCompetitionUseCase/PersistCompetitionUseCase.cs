@@ -15,19 +15,26 @@ namespace Application.UseCases.PersistCompetitionUseCase
         }
         public void Execute(CompetitionData data)
         {
-            _unitOfWork.CompetitionRepository.Insert(data.Competition);
-
-            foreach (TeamAux team in data.Teams)
+            try
             {
+                _unitOfWork.CompetitionRepository.Insert(data.Competition);
 
-                if (_unitOfWork.TeamRepository.GetByID(team.Id) == null)
+                foreach (TeamAux team in data.Teams)
                 {
-                    _unitOfWork.TeamRepository.Insert(team);
-                }
-                GenerateTeamCompetition(data.Competition.id, team.Id);
-            }
 
-            _unitOfWork.Commit();
+                    if (_unitOfWork.TeamRepository.GetByID(team.Id) == null)
+                    {
+                        _unitOfWork.TeamRepository.Insert(team);
+                    }
+                    GenerateTeamCompetition(data.Competition.id, team.Id);
+                }
+
+                _unitOfWork.Commit();
+            }
+            catch (Exception)
+            {
+                throw new Exception("Server error");
+            }
         }
 
         private void GenerateTeamCompetition(int idCompetition, int idTeam)

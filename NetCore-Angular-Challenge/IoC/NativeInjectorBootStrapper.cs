@@ -1,5 +1,6 @@
 ﻿using Application.Repositories;
 using Application.UoW;
+using Application.UseCases.CRUDCompetitions.GetCompetitionsUseCase;
 using Application.UseCases.ImportCompetitionUseCase;
 using Application.UseCases.PersistCompetitionUseCase;
 using ErrorHandler.Interfaces;
@@ -19,6 +20,7 @@ namespace IoC
             //Use Cases
             services.AddScoped<IImportCompetitionUseCase, ImportCompetitionUseCase>();
             services.AddScoped<IPersistCompetitionUseCase, PersistCompetitionUseCase>();
+            services.AddScoped<IGetCompetitionsUseCase, GetCompetitionsUseCase>();
 
             //Repositories
             services.AddTransient<ICompetitionRepository, CompetitionRepository>();
