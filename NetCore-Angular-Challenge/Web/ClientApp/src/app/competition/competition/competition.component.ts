@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { CompetitionStoreService } from '../core/stores/competition-store.service';
-import { Competition } from '../models/Competition';
+import { CompetitionStoreService } from '../../core/stores/competition-store.service';
+import { Competition } from '../../models/Competition';
 import { BlockUI, NgBlockUI } from "ng-block-ui";
 
 @Component({
@@ -21,7 +21,6 @@ export class CompetitionComponent implements OnInit {
     this.competitionStore.competitions$.subscribe(competitions => {
       this.blockUI.stop();
       this.competitions = competitions;
-      console.log("COMPETIIONS ", this.competitions);
     });
   }
 }

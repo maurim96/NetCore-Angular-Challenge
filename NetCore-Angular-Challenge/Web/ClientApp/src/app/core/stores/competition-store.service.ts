@@ -2,13 +2,14 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from "rxjs";
 import { CompetitionService } from '../services/competition.service';
 import { Competition } from '../../models/Competition';
+import { ToastrService } from 'ngx-toastr';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CompetitionStoreService {
 
-  constructor(private competitionService: CompetitionService) {
+  constructor(private competitionService: CompetitionService, private toastr: ToastrService) {
     this.fetchCompetitions();
    }
 
@@ -50,6 +51,7 @@ export class CompetitionStoreService {
   fetchCompetitions() {
     this.competitionService.GetCompetitions().subscribe(res => {
       this.competitions = res;
+      this.toastr.success('Competitions successfully loaded', 'Success');
     });
   }
 }
