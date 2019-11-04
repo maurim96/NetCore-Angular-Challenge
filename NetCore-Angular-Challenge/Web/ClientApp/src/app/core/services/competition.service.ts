@@ -13,6 +13,10 @@ export class CompetitionService {
     return this._http.get(Constants.apiRoot + "competition");
   }
 
+  GetCompetitionById(idCompetition): Observable<any> {
+    return this._http.get(Constants.apiRoot + `competition/${idCompetition}`, { responseType: "json" });
+  }
+
   ImportCompetition(id: number): Observable<any> {
     return this._http.post(Constants.apiRoot + `competition/${id}`, {}, { responseType: "text" });
   }

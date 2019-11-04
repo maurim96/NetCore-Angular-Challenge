@@ -1,12 +1,14 @@
-<app-competition-carrousel
+<app-carrousel
   [data]="apiCompetitions"
   [title]="'Available Competitions'"
   [icon]="'pi pi-download'"
+  [img]="'assets/img/logo.jpg'"
   (onClickEmitter)="importCompetition($event)"
-></app-competition-carrousel>
-<app-competition-carrousel
+></app-carrousel>
+<app-carrousel
   [data]="competitions"
   [title]="'Imported Competitions'"
   [icon]="'pi pi-search'"
+  [img]="'assets/img/logo.jpg'"
   (onClickEmitter)="viewDetails($event)"
-></app-competition-carrousel>
+></app-carrousel>

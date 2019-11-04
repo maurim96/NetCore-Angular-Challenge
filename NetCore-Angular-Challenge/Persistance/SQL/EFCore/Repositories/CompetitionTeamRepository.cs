@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Persistance.SQL.EFCore.Entities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Persistance.SQL.EFCore.Repositories
@@ -50,6 +51,18 @@ namespace Persistance.SQL.EFCore.Repositories
             CompetitionsTeams compTeamToUpdate = _mapper.Map<CompetitionTeam, CompetitionsTeams>(compTeam);
             _context.CompetitionsTeams.Attach(compTeamToUpdate);
             _context.Entry(compTeamToUpdate).State = EntityState.Modified;
+        }
+
+        public List<CompetitionTeam> GetByCompetitionId(int idCompetition)
+        {
+            List<CompetitionsTeams> compTeamList = _context.CompetitionsTeams.Where(x => x.CompetitionId == idCompetition).Include(z => z.Team).ThenInclude(m => m.Players).ToList();
+            return _mapper.Map<List<CompetitionsTeams>, List<CompetitionTeam>>(compTeamList);
+        }
+
+        public List<CompetitionTeam> GetByCompetitionIdWithoutPlayers(int idCompetition)
+        {
+            List<CompetitionsTeams> compTeamList = _context.CompetitionsTeams.Where(x => x.CompetitionId == idCompetition).Include(z => z.Team).ToList();
+            return _mapper.Map<List<CompetitionsTeams>, List<CompetitionTeam>>(compTeamList);
         }
     }
 }

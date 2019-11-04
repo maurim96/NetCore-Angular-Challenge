@@ -13,4 +13,10 @@ namespace Domain
 
         public ICollection<CompetitionTeam> TeamsLink { get; set; }
     }
+
+    public class CompleteCompetition
+    {
+        public Competition competition { get; set; }
+        public List<Team> teams { get; set; }
+    }
 }

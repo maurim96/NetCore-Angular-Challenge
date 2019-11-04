@@ -7,6 +7,9 @@ namespace Application.Repositories
 {
     public interface ICompetitionTeamRepository
     {
+        List<CompetitionTeam> GetByCompetitionId(int idCompetition);
+        List<CompetitionTeam> GetByCompetitionIdWithoutPlayers(int idCompetition);
+        
         CompetitionTeam GetByID(int id);
 
         void Insert(CompetitionTeam competitionTeam);

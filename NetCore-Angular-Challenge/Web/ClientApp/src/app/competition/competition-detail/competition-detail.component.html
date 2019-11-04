@@ -1,0 +1,10 @@
+<span [routerLink]="['']" routerLinkActive="router-link-active" class="back-button"
+  ><i class="pi pi-arrow-left"></i
+></span>
+<app-carrousel
+  [data]="teams"
+  [title]="competition?.name"
+  [icon]="'pi pi-search'"
+  [img]="'assets/img/team.jpg'"
+  (onClickEmitter)="viewDetails($event)"
+></app-carrousel>

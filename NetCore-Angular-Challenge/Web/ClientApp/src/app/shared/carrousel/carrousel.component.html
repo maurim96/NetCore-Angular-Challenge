@@ -1,0 +1,16 @@
+<h2 class="competition-screen-title">{{ title }}</h2>
+<p-dataView [value]="data" layout="grid">
+  <ng-template let-data pTemplate="gridItem">
+    <div style="padding:.5em" class="ui-g-12 ui-md-3">
+      <p-panel [header]="data.name + ' (' + (data.code ? data.code : data.tla)  + ')'" [style]="{ 'text-align': 'center' }">
+        <img src="{{img}}" width="80" height="60" />
+        <div><span class="competition-detail-subtitle">ID:</span> {{ data.id }}</div>
+        <div class="competition-detail">
+          <span class="competition-detail-subtitle">Area:</span> {{ data.area?.name }} {{ data.areaName }}
+        </div>
+        <hr class="ui-widget-content" style="border-top:0" />
+        <button pButton type="button" icon="{{ icon }}" (click)="onClick(data.id)" style="margin-top:0"></button>
+      </p-panel>
+    </div>
+  </ng-template>
+</p-dataView>

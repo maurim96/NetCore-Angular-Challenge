@@ -2,13 +2,12 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { CompetitionComponent } from "./competition/competition.component";
 import { CompetitionRoutingModule } from "./competition-route.module";
-import { DataViewModule } from "primeng/dataview";
-import { SharedModule, PanelModule, ButtonModule } from "primeng/primeng";
-import { CompetitionCarrouselComponent } from './competition-carrousel/competition-carrousel.component';
+import { CompetitionDetailComponent } from "./competition-detail/competition-detail.component";
+import { SharedResourcesModule } from '../shared/shared-resources.module';
 
 @NgModule({
-  declarations: [CompetitionComponent, CompetitionCarrouselComponent],
-  imports: [CommonModule, CompetitionRoutingModule, DataViewModule, SharedModule, PanelModule, ButtonModule ],
+  declarations: [CompetitionComponent, CompetitionDetailComponent],
+  imports: [CommonModule, CompetitionRoutingModule, SharedResourcesModule],
   exports: [CompetitionComponent]
 })
 export class CompetitionModule {}
