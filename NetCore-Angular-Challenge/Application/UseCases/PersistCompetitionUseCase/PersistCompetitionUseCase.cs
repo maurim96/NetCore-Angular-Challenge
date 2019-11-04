@@ -31,7 +31,7 @@ namespace Application.UseCases.PersistCompetitionUseCase
 
                 _unitOfWork.Commit();
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 throw new Exception("Server error");
             }

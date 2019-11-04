@@ -1,1 +1,12 @@
-<p>competition works!</p>
+<app-competition-carrousel
+  [data]="apiCompetitions"
+  [title]="'Available Competitions'"
+  [icon]="'pi pi-download'"
+  (onClickEmitter)="importCompetition($event)"
+></app-competition-carrousel>
+<app-competition-carrousel
+  [data]="competitions"
+  [title]="'Imported Competitions'"
+  [icon]="'pi pi-search'"
+  (onClickEmitter)="viewDetails($event)"
+></app-competition-carrousel>

@@ -66,8 +66,8 @@ namespace Application.UseCases.ImportCompetitionUseCase
 
                             foreach (TeamAux team in teams.teams)
                             {
-                                //CURRENTLY COMPLETING ONLY THE FIRST 5 TEAMS, IN ORDER TO AVOID A "MULTIPLE REQUESTS MADE" ON FOOTBALL-API
-                                if (counter == 5) break;
+                                //CURRENTLY COMPLETING ONLY THE FIRST 2 TEAMS, IN ORDER TO AVOID A "MULTIPLE REQUESTS MADE" ON FOOTBALL-API
+                                if (counter == 2) break;
                                 HttpRequestMessage playersRequest = GenerateHttpGetRequest($"http://api.football-data.org/v2/teams/{team.Id}");
                                 HttpResponseMessage playersResponse = await client.SendAsync(playersRequest);
 

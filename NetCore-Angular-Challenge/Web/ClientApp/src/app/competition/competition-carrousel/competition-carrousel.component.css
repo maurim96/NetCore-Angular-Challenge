@@ -1,0 +1,13 @@
+.competition-screen-title {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+  }
+  .competition-detail {
+    padding: 0 1em 1em 1em;
+    border-bottom: 1px solid #d9dad9;
+    margin: 1em;
+  }
+  .competition-detail-subtitle {
+    font-weight: bold;
+  }
+  

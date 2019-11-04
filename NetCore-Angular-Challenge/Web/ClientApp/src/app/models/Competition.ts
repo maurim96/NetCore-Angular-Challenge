@@ -4,3 +4,7 @@ export class Competition {
     areaName: string;
     code: string;
 };
+export class CompetitionApiResponse {
+    competitions: Competition[];
+    count: number;
+};
