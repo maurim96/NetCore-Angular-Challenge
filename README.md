@@ -26,5 +26,5 @@
 ##### > PrimeNg - https://www.primefaces.org/primeng/#/
 
 ## Setup
-#### Just clone project and run it on Visual Studio 2017+ and it should auto create the DB on SQL Server (check connectionString) and build in the Angular SPA (also check the environment variables con Angular project if you have any port with a different configuration). Last detail, in order to use Football API from localhost, you may need the "Allow CORS" extension for Google Chrome (https://mybrowseraddon.com/access-control-allow-origin.html).
+#### Just clone project and run it on Visual Studio 2017+ and it should auto create the DB on SQL Server (check connectionString) and build in the Angular SPA (also check the environment variables on Angular project if you have any port with a different configuration). Last detail, in order to use Football API from localhost, you may need the "Allow CORS" extension for Google Chrome (https://mybrowseraddon.com/access-control-allow-origin.html).
 #### If you have any further questions, do not hesitate in contacting me.
